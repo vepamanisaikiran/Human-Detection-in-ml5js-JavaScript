@@ -60,6 +60,8 @@
     // The results are in an array ordered by confidence.
     // console.log(results[0]);
     label = results[0].label;
+    console.log(label)
+    window.top.postMessage('hello world', '*') //inside the iframe
     window.top.postMessage(label)
 
 
